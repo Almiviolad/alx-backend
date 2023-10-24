@@ -71,6 +71,7 @@ data: the actual page of the dataset"""
                 data.append(indexed_data[i])
             else:
                 i += 1
+                next_index += 1
         return {'index': index,
                 'next_index':  next_index,
                 'page_size': page_size,
